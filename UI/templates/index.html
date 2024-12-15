@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Solar Activity Prediction - Home</title>
+	
+    
+    
+	<style>
+	body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+	background-color: azure;
+    color: darkblue;
+    font-style: italic;
+    }
+    fieldset {
+        border-color: darkblue;
+        width:70%;
+    }
+    input[type="submit"] {
+        height: 50px;
+        width: 50%;
+        background-color: lavenderblush;
+
+    }
+    img {
+    width:750px;
+}
+	</style>
+
+</head>
+<body style={background-color: azure;}>
+    <center>
+    <h1>Solar Activity Prediction Using ML And Wavelet Transform Over Sunspot Dataset</h1>
+    
+    
+    <fieldset>
+        
+    <legend><h2>Enter the date :</h2></legend>
+    <form action="/predict" method="POST">
+        <label for="date"> Enter the date in dd mm yyyy format: </label>
+        <input type="text" name="date"> <br/><br/><br/>
+        <input type="submit" value="Upload">
+    </form>
+    <br/><br/>
+</fieldset>
+</center>
+</body>
+</html>
